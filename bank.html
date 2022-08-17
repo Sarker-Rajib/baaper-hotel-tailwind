@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Baaper bank</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+   <header>
+      <section class="pt-8">
+         <h1 class="text-5xl font-semibold text-center">Welcome to
+            <span class="text-6xl text-pink-400">! Baap er bank ! </span>
+         </h1>
+      </section>
+   </header>
+
+   <main>
+      <section class="w-9/12 mt-12 mx-auto">
+         <div class="grid grid-cols-3 gap-5">
+            <div class="bg-purple-600 p-4 rounded text-white text-center">
+               <h4 class="text-3xl">Deposit</h4>
+               <h2 class="text-5xl pt-3">$<span id="total-deposit">00</span></h2>
+            </div>
+            <div class="bg-green-600 p-4 rounded text-white text-center">
+               <h4 class="text-3xl">Withdraw</h4>
+               <h2 class="text-5xl pt-3">$<span id="total-widthdraw">00</span></h2>
+            </div>
+            <div class="bg-amber-500 p-4 rounded text-white text-center">
+               <h4 class="text-3xl">Balance</h4>
+               <h2 class="text-5xl pt-3">$<span id="balance">1200</span> </h2>
+            </div>
+         </div>
+
+         <div class="grid grid-cols-2 gap-5 mt-8">
+            <div class="bg-rose-400 p-4 rounded text-white ">
+               <h4 class="text-2xl">Please Deposit</h4>
+               <!-- <form action=""> -->
+                  <input id="deposit-field" type="text" placeholder="Enter Your Amount" class="my-3 p-2 block text-blue-400 w-9/12 rounded">
+                  <button id="button-deposit" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-sky-500">Deposit</button>
+               <!-- </form> -->
+            </div>
+            <div class="bg-indigo-200 p-4 rounded text-white ">
+               <h4 class="text-2xl">Please Withdraw</h4>
+               <!-- <form action=""> -->
+                  <input id="widhdraw-field" type="text" placeholder="Enter Your Amount" class="my-3 p-2 block text-blue-400 w-9/12 rounded">
+                  <button id="button-widthdraw" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-sky-500">Widthdraw</button>
+               <!-- </form> -->
+            </div>
+         </div>
+      </section>
+   </main>
+
+
+
+   <!-- scripts are linked below -->
+   <script src="js/deposit.js"></script>
+   <script src="js/withdraw.js"></script>
+</body>
+</html>
